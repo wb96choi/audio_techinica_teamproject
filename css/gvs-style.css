@@ -1,0 +1,166 @@
+
+/*-------------- product-gallery view.html 전용(TOP) --------------*/
+
+.container00 > .ti1 {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+}
+
+/* 카테고리 상단 메뉴 */
+
+.btn-all {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin-bottom: 7%;
+}
+
+.depth1 {
+  margin-top: 20px;
+}
+
+.depth1 > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.depth1 > ul > li, .btn-all {
+  color: #999;
+}
+
+
+.depth1 > ul > li.textActive, .btn-all.textActive {
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+}
+
+
+
+
+.depth2 {
+  display: flex;
+  flex-wrap: nowrap;
+
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.depth2 .bt1 {
+  display: none;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+
+
+.bt1 {
+  border: 1px solid #ccc;
+  color: #AAAAAA;
+  background-color: transparent;
+
+  padding: 6px 8px;
+  border-radius: 4px;
+
+  display: inline-block;
+}
+
+
+.depth2 .bt1.on {
+  display: inline-block;
+}
+
+
+.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 필터 메뉴 */
+.filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 55px;
+  height: 24px;
+  background-color: #333;
+  border-radius: 2px;
+  position: relative;
+  left: 85%;
+  margin-bottom: 30px;
+}
+.filter > a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter img {
+  width: 24px;
+  padding-bottom: 1px;
+}
+
+
+/* 상품 정보 */
+
+.container01 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#products-gvs .row0 {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap; /* 줄 내림용 */  
+  gap: 40px 0px; /* col 과 col 사이의 여백 - 수직 | 수평 = Gutter */
+
+  margin-bottom: 20px;
+}
+
+#products-gvs .productG {
+  width: calc(50% - 5px);
+  /*background-color: rgb(242, 242, 242);
+  outline: 0.1px solid #e1e1e1;*/
+}
+
+#products-gvs .productG img {
+  width: 100%;
+}
+
+#products-gvs .info0 .prd-title0 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#products-gvs .info0 .price0 {
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+#products-gvs .info0 .explain0 {
+  color: #333;
+  font-size: 12px;
+
+}
+
+
+
+
+
+/*-------------- product-gallery view.html 전용(END) --------------*/
