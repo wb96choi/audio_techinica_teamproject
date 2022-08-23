@@ -1,7 +1,7 @@
 // 서버에 제품 데이터 요청(data request)(가져오기)
 function getData() {
   // 
-  const DataURL = 'https://raw.githubusercontent.com/ASBEN1/2022.07.12_Team_Project_only_json/main/data.json';
+  const DataURL = 'https://raw.githubusercontent.com/wb96choi/at_json/main/data.json';
   //'깃허브 주소 (깃허브에 올린 json 파일(경로) 항목을 눌러서 row를 누른다 그 다음 주소를 복붙)'
   fetch(DataURL)
     .then(function (res) {
