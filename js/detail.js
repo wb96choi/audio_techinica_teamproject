@@ -21,24 +21,24 @@ function showDetail(obj) {
   const quary = location.search;
   console.log(quary);
   // ? URL quary문을 object(변수)로 변경 -> html 에서도
-  let params = new URLSearchParams(quary).get('id');
+  var params = new URLSearchParams(quary).get('id');
   // const는 상수라 변경이 불가라서 let으로 변경해준다
   console.log(params);
 
 
   // 해당 id 제품 출력
-  let mainGroup = obj[params].mainGroup;
-  let category = obj[params].category;
-  let name = obj[params].name;
-  let price = obj[params].price;
-  let imgUrl = obj[params].imgUrl;
-  let imgUrl2 = obj[params].imgUrl2;
-  let imgUrl3 = obj[params].imgUrl3;
-  let imgUrl4 = obj[params].imgUrl4;
-  let text = obj[params].text;
-  let color1 = obj[params].color1;
-  let color2 = obj[params].color2;
-  let color3 = obj[params].color3;
+  var mainGroup = obj[params].mainGroup;
+  var category = obj[params].category;
+  var name = obj[params].name;
+  var price = obj[params].price;
+  var imgUrl = obj[params].imgUrl;
+  var imgUrl2 = obj[params].imgUrl2;
+  var imgUrl3 = obj[params].imgUrl3;
+  var imgUrl4 = obj[params].imgUrl4;
+  var text = obj[params].text;
+  var color1 = obj[params].color1;
+  var color2 = obj[params].color2;
+  var color3 = obj[params].color3;
 
   // products-detail.html에 각 변수값 주입
 
@@ -49,7 +49,7 @@ function showDetail(obj) {
   // $('#products-detail #detail1 .mainallCT container p').text(text);
   // $('#products-detail #detail1 .mainallCT p .ps1').text(price);
 
-  let htmlbefore = `
+  var htmlbefore = `
     <div class="mainallCT">
   
     <div class="containerD">
@@ -62,7 +62,7 @@ function showDetail(obj) {
   
     </div>
   `
-  let htmlafter = 
+  var htmlafter = 
   `<div class="option">
   
   <div class="wrap">
